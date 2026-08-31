@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root{
-    --bg-color: #ddd6c2;
+    --bg-color: #eae3cf;
     --text-color: #192029;
     --text-muted: #4e5562; 
     --accent-color: #ba9a18;
     --border-color: #c9c1a8;
-    --surface-color: #d4c08c;
-    --accent-hover-color: #a17c0f;
+    --surface-color: #ae8b2c;
+    --accent-hover: #f1e2ad;   
     
     --font-family: 'Inter', sans-serif;
     --font-size: 16px;
@@ -32,3 +32,60 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition, 0.2s ease);
+}
+
+.nav-link:hover {
+    color: var(--accent-hover);
+}
+.hero {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.hero-eyebrow {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.hero-title {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 3.75rem;
+    }
+}
+
+.hero-subtitle {
+    color: var(--text-muted);
+    font-size: 1.125rem;
+}
