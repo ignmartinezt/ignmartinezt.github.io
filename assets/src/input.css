@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* =========================
-   VARIABLES
-========================= */
-
 :root {
     --bg-color: #eae3cf;
     --text-color: #192029;
@@ -16,9 +12,6 @@
 
     --font-family: 'Inter', sans-serif;
 }
-/* =========================
-   BODY
-========================= */
 
 body {
     background-color: var(--bg-color);
