@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --bg-color: #eae3cf;
+    --text-color: #192029;
+    --text-muted: #4e5562;
+
+    --accent-color: #ba9a18;
+    --surface-color: #ae8b2c;
+    --border-color: #c9c1a8;
+    --accent-hover: #f1e2ad;
+
+    --font-family: 'Inter', sans-serif;
+}
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-family: var(--font-family);
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased;
+}
