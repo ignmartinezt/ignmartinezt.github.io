@@ -2,14 +2,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-    --bg-color: #eae3cf;
-    --text-color: #192029;
+    --bg-color: #3e0580;
+    --text-color: #edeff1;
     --text-muted: #4e5562;
 
-    --accent-color: #ba9a18;
-    --surface-color: #ae8b2c;
-    --border-color: #c9c1a8;
-    --accent-hover: #f1e2ad;
+    --accent-color: #500572;
+    --surface-color: #7910a3;
+    --border-color: #fafafa;
+    --accent-hover: #9876f8;
 
     --font-family: 'Inter', sans-serif;
 }
@@ -24,4 +24,59 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Aquí escribes tu propio CSS: .header, .navbar, .nav-link, .hero, .section-container ... */
+
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+.hero {
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+}
+
+.hero-eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.section-text {
+    color: var(--text-muted);
+}   
